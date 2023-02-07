@@ -17,6 +17,7 @@ foreach (char letter in letters)
 {
 
     if (letter == '0')
+
     {
         counter0++;
     }
