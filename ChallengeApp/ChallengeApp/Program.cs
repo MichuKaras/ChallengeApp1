@@ -1,8 +1,8 @@
 ﻿using ChallengeApp;
 
-Employee employee1 = new Employee("Waldemar", "Kiepski", "35");
-Employee employee2 = new Employee("Tadeusz", "Norek", "58");
-Employee employee3 = new Employee("Barbara", "Mostowiak", "80");
+User employee1 = new User("Waldemar", "Kiepski");
+User employee2 = new User("Tadeusz", "Norek");
+User employee3 = new User("Barbara", "Mostowiak");
 
 employee1.AddScore(5);
 employee1.AddScore(4);
@@ -22,13 +22,13 @@ employee3.AddScore(9);
 employee3.AddScore(5);
 employee3.AddScore(6);
 
-List<Employee> employees = new List<Employee>()
+List<User> employees = new List<User>()
 {
     employee1, employee2, employee3
 };
 
 int maxResult = -1;
-Employee employeeWithMaxResult = null;
+User employeeWithMaxResult = null;
 
 
 
@@ -40,8 +40,3 @@ foreach (var employee in employees)
     }
 }
 
-Console.WriteLine("Pracownik Miesiąca to:");
-Console.WriteLine("Imie: " + employeeWithMaxResult.Name );
-Console.WriteLine("Nazwisko: " + employeeWithMaxResult.Surename);
-Console.WriteLine("Wiek: " + employeeWithMaxResult.Age + " lat");
-Console.WriteLine("Wynik: " + employeeWithMaxResult.Result + " punktów");
