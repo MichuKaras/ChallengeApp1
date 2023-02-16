@@ -7,5 +7,6 @@
         public float Max { get; set; }
 
         public float Average { get; set; }
+
     }
 }
